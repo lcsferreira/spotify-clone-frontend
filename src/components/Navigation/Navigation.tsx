@@ -25,7 +25,7 @@ export function Navigation({ isSearching }: NavigationProps) {
   }
 
   return (
-    <nav className="w-full flex justify-between bg-transparent px-2.5 py-4 h-20rounded-lg">
+    <nav className="w-full flex justify-between bg-transparent h-20rounded-lg">
       <div className="w-24">
         <ul className="flex justify-around">
           <li>
