@@ -8,6 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 library.add(faAngleLeft, faAngleRight, faBell, faPeopleGroup, faUser);
 
@@ -16,25 +17,31 @@ interface NavigationProps {
 }
 
 export function Navigation({ isSearching }: NavigationProps) {
-  function handleBackButton() {
-    window.history.back();
-  }
+  const navigate = useNavigate();
 
-  function handleForwardButton() {
-    window.history.forward();
-  }
+  const handleClickNews = () => {
+    navigate("/news");
+  };
+
+  const handleBackButton = () => {
+    navigate(-1);
+  };
+
+  const handleForwardButton = () => {
+    navigate(1);
+  };
 
   return (
     <nav className="w-full flex justify-between bg-transparent h-20rounded-lg">
       <div className="w-24">
         <ul className="flex justify-around">
           <li>
-            <Button>
+            <Button onClick={handleBackButton}>
               <FontAwesomeIcon icon="angle-left" />
             </Button>
           </li>
           <li>
-            <Button>
+            <Button onClick={handleForwardButton}>
               <FontAwesomeIcon icon="angle-right" />
             </Button>
           </li>
@@ -44,7 +51,7 @@ export function Navigation({ isSearching }: NavigationProps) {
       <div className="w-40">
         <ul className="flex justify-around text-zinc-300">
           <li>
-            <Button>
+            <Button onClick={handleClickNews}>
               <FontAwesomeIcon icon="bell" />
             </Button>
           </li>

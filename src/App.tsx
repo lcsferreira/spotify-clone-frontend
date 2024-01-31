@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "./app/pages/main";
 import { Navigation, Sidebar } from "./components";
+import News from "./app/pages/news";
+import Artist from "./app/pages/artist";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/news" element={<News />} />
+            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="/artists" element={<Artist />} />
           </Routes>
         </div>
       </div>
