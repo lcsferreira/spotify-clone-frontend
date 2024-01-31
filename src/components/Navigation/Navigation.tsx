@@ -42,7 +42,7 @@ export function Navigation({ isSearching }: NavigationProps) {
         {isSearching && <input type="text" placeholder="Search" />}
       </div>
       <div className="w-40">
-        <ul className="flex justify-around text-slate-300">
+        <ul className="flex justify-around text-zinc-300">
           <li>
             <Button>
               <FontAwesomeIcon icon="bell" />
