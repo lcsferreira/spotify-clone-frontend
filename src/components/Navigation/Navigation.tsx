@@ -16,8 +16,16 @@ interface NavigationProps {
 }
 
 export function Navigation({ isSearching }: NavigationProps) {
+  function handleBackButton() {
+    window.history.back();
+  }
+
+  function handleForwardButton() {
+    window.history.forward();
+  }
+
   return (
-    <nav className="w-full flex justify-between bg-neutral-800 px-2.5 py-4 my-3.5 h-20 fixed rounded-lg">
+    <nav className="w-full flex justify-between bg-transparent px-2.5 py-4 h-20rounded-lg">
       <div className="w-24">
         <ul className="flex justify-around">
           <li>
