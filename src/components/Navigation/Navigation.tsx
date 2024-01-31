@@ -34,7 +34,7 @@ export function Navigation({ isSearching }: NavigationProps) {
   return (
     <nav className="w-full flex justify-between bg-transparent h-20rounded-lg">
       <div className="w-24">
-        <ul className="flex justify-around">
+        <ul className="flex justify-between">
           <li>
             <Button onClick={handleBackButton}>
               <FontAwesomeIcon icon="angle-left" />
@@ -49,7 +49,7 @@ export function Navigation({ isSearching }: NavigationProps) {
         {isSearching && <input type="text" placeholder="Search" />}
       </div>
       <div className="w-40">
-        <ul className="flex justify-around text-zinc-300">
+        <ul className="flex justify-between text-zinc-300">
           <li>
             <Button onClick={handleClickNews}>
               <FontAwesomeIcon icon="bell" />

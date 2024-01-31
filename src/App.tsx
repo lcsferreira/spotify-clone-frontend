@@ -12,7 +12,7 @@ function App() {
           <Sidebar.Header />
           <Sidebar.Content />
         </Sidebar.Root>
-        <div className="w-3/5 h-auto flex flex-col justify-between bg-zinc-800 px-2.5 py-4 my-3.5  rounded-lg lg:w-[70%]">
+        <div className="w-3/5 h-auto flex flex-col justify-between bg-zinc-800 px-6 py-4 my-3.5  rounded-lg lg:w-[70%]">
           <Navigation />
           <Routes>
             <Route path="/" element={<Main />} />
