@@ -8,68 +8,6 @@
       "img": "https://via.placeholder.com/150",
       "bio": "User 1 bio",
       "isPremium": true,
-      "recentlyPlayed": [
-        {
-          "id": "1",
-          "title": "Album 1",
-          "type": "album",
-          "img": "https://via.placeholder.com/150"
-        },
-        {
-          "id": "1",
-          "title": "Music 1",
-          "type": "single",
-          "img": "https://via.placeholder.com/150"
-        },
-        {
-          "id": "1",
-          "title": "Playlist 1",
-          "type": "playlist",
-          "img": "https://via.placeholder.com/150"
-        },
-        {
-          "id": "1",
-          "title": "Album 1",
-          "type": "album",
-          "img": "https://via.placeholder.com/150"
-        },
-        {
-          "id": "1",
-          "title": "Music 1",
-          "type": "single",
-          "img": "https://via.placeholder.com/150"
-        },
-        {
-          "id": "1",
-          "title": "Playlist 1",
-          "type": "playlist",
-          "img": "https://via.placeholder.com/150"
-        }
-      ],
-      "playlists": [
-        {
-          "id": "1",
-          "title": "Playlist 1",
-          "img": "https://via.placeholder.com/150",
-          "createdAt": "2020-01-01T00:00:00Z",
-          "description": "Playlist 1 description",
-          "likes": 1000,
-          "tracks": [
-            {
-              "id": "1",
-              "type": "album",
-              "albumId": "1",
-              "addedAt": "2020-01-01T00:00:00Z"
-            },
-            {
-              "id": "2",
-              "type": "single",
-              "singleId": "1",
-              "addedAt": "2020-01-01T00:00:00Z"
-            }
-          ]
-        }
-      ],
       "followedArtists": [
         {
           "id": "1",
@@ -104,46 +42,6 @@
               "type": "single",
               "singleId": "1",
               "addedAt": "2020-01-01T00:00:00Z"
-            }
-          ]
-        }
-      ],
-      "followedPodcasts": [
-        {
-          "id": "1",
-          "title": "Podcast 1",
-          "author": "Author 1",
-          "img": "https://via.placeholder.com/150",
-          "description": "Podcast 1 description",
-          "overallRating": 4.7,
-          "episodes": [
-            {
-              "id": "1",
-              "title": "Episode 1",
-              "author": "Author 1",
-              "duration": "1:00:00",
-              "releaseDate": "2020-01-01",
-              "img": "https://via.placeholder.com/150",
-              "description": "Episode 1 description"
-            }
-          ]
-        },
-        {
-          "id": "2",
-          "title": "Podcast 2",
-          "author": "Author 2",
-          "img": "https://via.placeholder.com/150",
-          "description": "Podcast 2 description",
-          "overallRating": 4.7,
-          "episodes": [
-            {
-              "id": "1",
-              "title": "Episode 1",
-              "author": "Author 2",
-              "duration": "1:00:00",
-              "releaseDate": "2020-01-01",
-              "img": "https://via.placeholder.com/150",
-              "description": "Episode 1 description"
             }
           ]
         }
@@ -187,37 +85,52 @@
           "img": "https://via.placeholder.com/150",
           "reproductions": 1000000
         }
-      ],
-      "likedPlaylists": [
-        {
-          "id": "1",
-          "title": "Playlist 1",
-          "img": "https://via.placeholder.com/150",
-          "createdAt": "2020-01-01T00:00:00Z",
-          "description": "Playlist 1 description",
-          "likes": 1000,
-          "tracks": [
-            {
-              "id": "1",
-              "type": "album",
-              "albumId": "1",
-              "addedAt": "2020-01-01T00:00:00Z"
-            },
-            {
-              "id": "2",
-              "type": "single",
-              "singleId": "1",
-              "addedAt": "2020-01-01T00:00:00Z"
-            }
-          ]
-        }
-      ],
-      "likedPodcasts": []
+      ]
     }
   ],
 
-  "artists": [
+  "recentlyPlayed": [
     {
+      "userId": "1",
+      "title": "Album 1",
+      "type": "album",
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": "1",
+      "title": "Music 1",
+      "type": "single",
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": "1",
+      "title": "Playlist 1",
+      "type": "playlist",
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": "1",
+      "title": "Album 1",
+      "type": "album",
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": "1",
+      "title": "Music 1",
+      "type": "single",
+      "img": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": "1",
+      "title": "Playlist 1",
+      "type": "playlist",
+      "img": "https://via.placeholder.com/150"
+    }
+  ],
+
+  "followedArtists": [
+    {
+      "userId": "1",
       "id": "1",
       "name": "Artist 1",
       "albums": [
@@ -283,10 +196,35 @@
       "monthlyListeners": 1000000
     }
   ],
-  "podcasts": [],
   "playlists": [
     {
       "id": "1",
+      "title": "Playlist 1",
+      "artists": "Artist 1 & Artist 2 & Artist 3",
+      "img": "https://via.placeholder.com/150",
+      "createdAt": "2020-01-01T00:00:00Z",
+      "description": "Playlist 1 description",
+      "likes": 1000,
+      "tracks": [
+        {
+          "id": "1",
+          "type": "album",
+          "albumId": "1",
+          "addedAt": "2020-01-01T00:00:00Z"
+        },
+        {
+          "id": "2",
+          "type": "single",
+          "singleId": "1",
+          "addedAt": "2020-01-01T00:00:00Z"
+        }
+      ]
+    }
+  ],
+
+  "createdPlaylists": [
+    {
+      "userId": "1",
       "title": "Playlist 1",
       "img": "https://via.placeholder.com/150",
       "createdAt": "2020-01-01T00:00:00Z",
@@ -306,48 +244,44 @@
           "addedAt": "2020-01-01T00:00:00Z"
         }
       ]
-    },
+    }
+  ],
+  "followedPodcasts": [
     {
-      "id": "2",
-      "title": "Playlist 2",
+      "userId": "1",
+      "title": "Podcast 1",
+      "author": "Author 1",
       "img": "https://via.placeholder.com/150",
-      "createdAt": "2020-01-01T00:00:00Z",
-      "description": "Playlist 2 description",
-      "likes": 1000,
-      "tracks": [
+      "description": "Podcast 1 description",
+      "overallRating": 4.7,
+      "episodes": [
         {
           "id": "1",
-          "type": "album",
-          "albumId": "1",
-          "addedAt": "2020-01-01T00:00:00Z"
-        },
-        {
-          "id": "2",
-          "type": "single",
-          "singleId": "1",
-          "addedAt": "2020-01-01T00:00:00Z"
+          "title": "Episode 1",
+          "author": "Author 1",
+          "duration": "1:00:00",
+          "releaseDate": "2020-01-01",
+          "img": "https://via.placeholder.com/150",
+          "description": "Episode 1 description"
         }
       ]
     },
     {
-      "id": "3",
-      "title": "Playlist 3",
+      "id": "2",
+      "title": "Podcast 2",
+      "author": "Author 2",
       "img": "https://via.placeholder.com/150",
-      "createdAt": "2020-01-01T00:00:00Z",
-      "description": "Playlist 3 description",
-      "likes": 1000,
-      "tracks": [
+      "description": "Podcast 2 description",
+      "overallRating": 4.7,
+      "episodes": [
         {
           "id": "1",
-          "type": "album",
-          "albumId": "1",
-          "addedAt": "2020-01-01T00:00:00Z"
-        },
-        {
-          "id": "2",
-          "type": "single",
-          "singleId": "1",
-          "addedAt": "2020-01-01T00:00:00Z"
+          "title": "Episode 1",
+          "author": "Author 2",
+          "duration": "1:00:00",
+          "releaseDate": "2020-01-01",
+          "img": "https://via.placeholder.com/150",
+          "description": "Episode 1 description"
         }
       ]
     }

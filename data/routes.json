@@ -1,0 +1,9 @@
+{
+  "users/:id/recentlyPlayed": "users/:id/recentlyPlayed",
+  "users/:id/playlists": "users/:id/playlists",
+  "users/:id/followedArtists": "users/:id/followedArtists",
+  "users/:id/followedUsers": "users/:id/followedUsers",
+  "users/:id/followedPlaylists": "users/:id/followedPlaylists",
+  "users/:id/followedPodcasts": "users/:id/followedPodcasts",
+  "users/:id/likedTracks": "users/:id/likedTracks"
+}
