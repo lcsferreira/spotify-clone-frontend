@@ -30,3 +30,8 @@ export const getPlaylists = async (user: userModel) => {
   const data = response.data.slice(0, 4);
   return data;
 };
+
+export const getCreatedPlaylists = async (user: userModel) => {
+  const response = await api.get(`users/${user.id}/createdPlaylists`);
+  return response.data;
+};

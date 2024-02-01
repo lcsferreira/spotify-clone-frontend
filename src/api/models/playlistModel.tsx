@@ -9,4 +9,6 @@ export interface playlistModel {
   likes: number;
   createdAt: string;
   artists: string;
+  author?: string;
+  totalTracks?: number;
 }
