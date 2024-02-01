@@ -6,7 +6,7 @@ library.add(faHome, faMagnifyingGlass);
 
 export default function SidebarHeader() {
   return (
-    <div className="w-full h-auto flex flex-col bg-zinc-800 px-2.5 py-4 rounded-lg gap-3">
+    <div className="w-full h-auto flex flex-col bg-zinc-900 px-2.5 py-4 rounded-lg gap-3">
       <a
         href=""
         className="flex flex-row gap-2 ml-3 text-zinc-300 hover:text-zinc-50 transition-all"
