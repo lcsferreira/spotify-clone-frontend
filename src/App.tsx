@@ -7,7 +7,7 @@ import Artist from "./app/pages/artist";
 function App() {
   return (
     <>
-      <div className="w-screen h-screen bg-zinc-950 flex flex-row justify-evenly lg:justify-center lg:gap-4">
+      <div className="w-auto h-auto bg-zinc-950 flex flex-row justify-evenly lg:justify-center lg:gap-4">
         <Sidebar.Root>
           <Sidebar.Header />
           <Sidebar.Content />

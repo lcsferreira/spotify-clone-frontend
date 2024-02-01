@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import RecentCard from "../../components/RecentCard/RecentCard";
-import { getPodcasts, getRecent } from "../../api/api";
+import { getPlaylists, getPodcasts, getRecent } from "../../api/api";
 import { userModel } from "../../api/models/userModel";
 import { recentlyPlayedModel } from "../../api/models/recentlyPlayedModel";
 import { get } from "http";
 import Card from "../../components/Card/Card";
 import { podcastModel } from "../../api/models/podcastModel";
+import { playlistModel } from "../../api/models/playlistModel";
 
 export default function Main() {
   const date = new Date();
@@ -25,6 +26,8 @@ export default function Main() {
 
   const [podcasts, setPodcasts] = useState<Array<podcastModel>>([]);
 
+  const [playlists, setPlaylists] = useState<Array<playlistModel>>([]);
+
   const user: userModel = {
     id: "1",
     name: "John Doe",
@@ -34,6 +37,7 @@ export default function Main() {
   const fecthRecentlyPlayed = async () => {
     try {
       getRecent(user).then((data: Array<recentlyPlayedModel>) => {
+        // console.log(data);
         setRecentlyPlayed(data);
       });
     } catch (error) {
@@ -44,7 +48,19 @@ export default function Main() {
   const fecthPodcasts = async () => {
     try {
       getPodcasts(user).then((data: Array<podcastModel>) => {
+        // console.log(data);
         setPodcasts(data);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchPlaylists = async () => {
+    try {
+      getPlaylists(user).then((data: Array<playlistModel>) => {
+        // console.log(data);
+        setPlaylists(data);
       });
     } catch (error) {
       console.log(error);
@@ -54,6 +70,7 @@ export default function Main() {
   useEffect(() => {
     fecthRecentlyPlayed();
     fecthPodcasts();
+    fetchPlaylists();
   }, []);
 
   return (
@@ -79,6 +96,24 @@ export default function Main() {
             title={item.title}
             img={item.img}
             author={item.author}
+          />
+        ))}
+      </div>
+      <h2 className="text-xl font-bold text-zinc-50 flex justify-between">
+        O Melhor dos Artistas{" "}
+        <span>
+          <a href="/playlists" className="text-xs font-normal hover:underline">
+            Mostrar tudo
+          </a>
+        </span>
+      </h2>
+      <div className="grid grid-cols-4 grid-rows-1 py-5 gap-4">
+        {playlists?.map((item: playlistModel, index: any) => (
+          <Card
+            key={index}
+            title={item.title}
+            img={item.img}
+            author={item.artists}
           />
         ))}
       </div>
