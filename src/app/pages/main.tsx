@@ -18,8 +18,11 @@ export default function Main() {
   return (
     <div className="flex flex-col h-full mt-8">
       <h2 className="text-3xl font-bold text-zinc-50">{timeOfDayText}</h2>
-      <div>
-        <RecentCard />
+      <div className="grid grid-cols-2 grid-rows-3 gap-3 py-5">
+        <RecentCard title="Playlist 1" img="https://via.placeholder.com/150" />
+        <RecentCard title="Playlist 1" img="https://via.placeholder.com/150" />
+        <RecentCard title="Playlist 1" img="https://via.placeholder.com/150" />
+        <RecentCard title="Playlist 1" img="https://via.placeholder.com/150" />
       </div>
     </div>
   );
