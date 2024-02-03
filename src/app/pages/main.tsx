@@ -74,7 +74,7 @@ export default function Main() {
   }, []);
 
   return (
-    <div className="flex flex-col h-full mt-8">
+    <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold text-zinc-50">{timeOfDayText}</h2>
       <div className="grid grid-cols-2 grid-rows-3 gap-3 py-5">
         {recentlyPlayed?.map((item: recentlyPlayedModel, index: any) => (
@@ -93,6 +93,8 @@ export default function Main() {
         {podcasts?.map((item: podcastModel, index: any) => (
           <Card
             key={index}
+            type="Podcast"
+            id={item.id}
             title={item.title}
             img={item.img}
             author={item.author}
@@ -110,7 +112,9 @@ export default function Main() {
       <div className="grid grid-cols-4 grid-rows-1 py-5 gap-4">
         {playlists?.map((item: playlistModel, index: any) => (
           <Card
+            id={item.id}
             key={index}
+            type="Playlist"
             title={item.title}
             img={item.img}
             author={item.artists}

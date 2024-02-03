@@ -3,10 +3,14 @@ import Main from "./app/pages/main";
 import { Navigation, Sidebar } from "./components";
 import News from "./app/pages/news";
 import Artist from "./app/pages/artist";
+import Podcast from "./app/pages/podcast";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <div className="w-auto h-auto bg-zinc-950 flex flex-row justify-evenly lg:justify-center lg:gap-4">
         <Sidebar.Root>
           <Sidebar.Header />
@@ -17,12 +21,16 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/news" element={<News />} />
+            <Route path="/playlists" element={<h1>Playlists</h1>} />
+            <Route path="/podcasts" element={<h1>Podcasts</h1>} />
+            <Route path="/playlist/:id" element={<h1>Playlist</h1>} />
+            <Route path="/podcast/:id" element={<Podcast />} />
             <Route path="*" element={<h1>Not Found</h1>} />
             <Route path="/artists" element={<Artist />} />
           </Routes>
         </div>
       </div>
-    </>
+    </QueryClientProvider>
   );
 }
 

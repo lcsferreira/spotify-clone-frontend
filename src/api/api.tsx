@@ -35,3 +35,13 @@ export const getCreatedPlaylists = async (user: userModel) => {
   const response = await api.get(`users/${user.id}/createdPlaylists`);
   return response.data;
 };
+
+export const getPodcast = async (id: string) => {
+  const response = await api.get(`followedPodcasts/${id}`);
+  return response.data;
+};
+
+export const getPlaylist = async (id: string) => {
+  const response = await api.get(`playlists/${id}`);
+  return response.data;
+};

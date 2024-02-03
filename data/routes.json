@@ -5,5 +5,6 @@
   "users/:id/followedUsers": "users/:id/followedUsers",
   "users/:id/followedPlaylists": "users/:id/followedPlaylists",
   "users/:id/followedPodcasts": "users/:id/followedPodcasts",
+  "users/:id/followedPodcasts/:id": "followedPodcasts/:id",
   "users/:id/likedTracks": "users/:id/likedTracks"
 }

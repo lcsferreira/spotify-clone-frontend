@@ -32,7 +32,7 @@ export function Navigation({ isSearching }: NavigationProps) {
   };
 
   return (
-    <nav className="w-full flex justify-between bg-transparent h-20rounded-lg">
+    <nav className="w-full flex justify-between bg-transparent h-20rounded-lg h-20 place-items-center mb-4">
       <div className="w-24">
         <ul className="flex justify-between">
           <li>
