@@ -92,37 +92,43 @@
   "recentlyPlayed": [
     {
       "userId": "1",
+      "id": "1",
       "title": "Album 1",
       "type": "album",
       "img": "https://via.placeholder.com/150"
     },
     {
       "userId": "1",
+      "id": "1",
       "title": "Music 1",
       "type": "single",
       "img": "https://via.placeholder.com/150"
     },
     {
       "userId": "1",
+      "id": "1",
       "title": "Playlist 1",
       "type": "playlist",
       "img": "https://via.placeholder.com/150"
     },
     {
       "userId": "1",
+      "id": "1",
       "title": "Album 1",
       "type": "album",
       "img": "https://via.placeholder.com/150"
     },
     {
       "userId": "1",
+      "id": "1",
       "title": "Music 1",
       "type": "single",
       "img": "https://via.placeholder.com/150"
     },
     {
       "userId": "1",
-      "title": "Playlist 1",
+      "id": "2",
+      "title": "Playlist 2",
       "type": "playlist",
       "img": "https://via.placeholder.com/150"
     }

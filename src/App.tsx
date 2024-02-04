@@ -5,6 +5,7 @@ import News from "./app/pages/news";
 import Artist from "./app/pages/artist";
 import Podcast from "./app/pages/podcast";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Playlist from "./app/pages/playlist";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +24,7 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/playlists" element={<h1>Playlists</h1>} />
             <Route path="/podcasts" element={<h1>Podcasts</h1>} />
-            <Route path="/playlist/:id" element={<h1>Playlist</h1>} />
+            <Route path="/playlist/:id" element={<Playlist />} />
             <Route path="/podcast/:id" element={<Podcast />} />
             <Route path="*" element={<h1>Not Found</h1>} />
             <Route path="/artists" element={<Artist />} />

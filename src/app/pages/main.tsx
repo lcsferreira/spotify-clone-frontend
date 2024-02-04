@@ -78,7 +78,13 @@ export default function Main() {
       <h2 className="text-3xl font-bold text-zinc-50">{timeOfDayText}</h2>
       <div className="grid grid-cols-2 grid-rows-3 gap-3 py-5">
         {recentlyPlayed?.map((item: recentlyPlayedModel, index: any) => (
-          <RecentCard key={index} title={item.title} img={item.img} />
+          <RecentCard
+            key={index}
+            title={item.title}
+            img={item.img}
+            id={item.id}
+            type={item.type}
+          />
         ))}
       </div>
       <h2 className="text-xl font-bold text-zinc-50 flex justify-between">
