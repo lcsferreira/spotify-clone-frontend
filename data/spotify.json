@@ -264,6 +264,33 @@
           "releaseDate": "2020-01-01",
           "img": "https://via.placeholder.com/150",
           "description": "Episode 1 description"
+        },
+        {
+          "id": "2",
+          "title": "Episode 2",
+          "author": "Author 1",
+          "duration": "1:00:00",
+          "releaseDate": "2020-01-01",
+          "img": "https://via.placeholder.com/150",
+          "description": "Episode 2 description"
+        },
+        {
+          "id": "3",
+          "title": "Episode 3",
+          "author": "Author 1",
+          "duration": "1:00:00",
+          "releaseDate": "2020-01-01",
+          "img": "https://via.placeholder.com/150",
+          "description": "Episode 3 description"
+        },
+        {
+          "id": "4",
+          "title": "Episode 4",
+          "author": "Author 1",
+          "duration": "1:00:00",
+          "releaseDate": "2020-01-01",
+          "img": "https://via.placeholder.com/150",
+          "description": "Episode 4 description"
         }
       ]
     },

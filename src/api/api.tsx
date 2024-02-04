@@ -1,5 +1,6 @@
 import axios from "axios";
 import { userModel } from "./models/userModel";
+import { podcastModel } from "./models/podcastModel";
 
 export const api = axios.create({
   baseURL: "http://localhost:3000",
@@ -36,7 +37,7 @@ export const getCreatedPlaylists = async (user: userModel) => {
   return response.data;
 };
 
-export const getPodcast = async (id: string) => {
+export const getPodcast = async (id: string): Promise<podcastModel> => {
   const response = await api.get(`followedPodcasts/${id}`);
   return response.data;
 };
