@@ -209,19 +209,44 @@
       "artists": "Artist 1 & Artist 2 & Artist 3",
       "img": "https://via.placeholder.com/150",
       "createdAt": "2020-01-01T00:00:00Z",
+      "author": "Author 1",
       "description": "Playlist 1 description",
       "likes": 1000,
       "tracks": [
         {
           "id": "1",
-          "type": "album",
-          "albumId": "1",
+          "title": "Track 1",
+          "album": "Album 1",
+          "artist": "Artist 1",
+          "duration": "3:00",
+          "img": "https://via.placeholder.com/150",
           "addedAt": "2020-01-01T00:00:00Z"
         },
         {
           "id": "2",
-          "type": "single",
-          "singleId": "1",
+          "title": "Music 1",
+          "album": "Music 1",
+          "artist": "Artist 2",
+          "duration": "3:00",
+          "img": "https://via.placeholder.com/150",
+          "addedAt": "2020-01-01T00:00:00Z"
+        },
+        {
+          "id": "3",
+          "title": "Track 2",
+          "album": "Album 1",
+          "artist": "Artist 1",
+          "duration": "3:00",
+          "img": "https://via.placeholder.com/150",
+          "addedAt": "2020-01-01T00:00:00Z"
+        },
+        {
+          "id": "4",
+          "title": "Music 2",
+          "album": "Music 2",
+          "artist": "Artist 3",
+          "duration": "3:00",
+          "img": "https://via.placeholder.com/150",
           "addedAt": "2020-01-01T00:00:00Z"
         }
       ]

@@ -3,8 +3,9 @@ export interface trackModel {
   title: string;
   artist: string;
   album: string;
+  img: string;
   duration: string;
   thumbnail: string;
   likes: number;
-  createdAt: string;
+  addedAt: string;
 }
